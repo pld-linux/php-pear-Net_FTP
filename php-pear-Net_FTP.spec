@@ -1,19 +1,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Net
 %define		_subclass	FTP
-%define		_status		stable
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - comfortable communication with FTP-servers
 Summary(pl):	%{_pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
 Version:	1.3.0
-%define	_version	1.3.0beta1
-Release:	0.beta1
+%define	_version	1.3.0beta2
+Release:	0.beta2
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{_version}.tgz
-# Source0-md5:	86e2ad80bfac8153f243e5c51dd79732
+# Source0-md5:	c5a74cd6adfb1a10d5a96b368699c6da
 URL:		http://pear.php.net/package/Net_FTP/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-ftp
