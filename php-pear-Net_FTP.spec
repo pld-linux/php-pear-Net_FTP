@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Net
-%define         _subclass       FTP
+%define		_class		Net
+%define		_subclass	FTP
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Comfortable communication with FTP-servers
-Summary(pl):	%{_pearname} - Komfortowa komunikacja z serwerami FTP
+Summary:	%{_pearname} - comfortable communication with FTP-servers
+Summary(pl):	%{_pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
 Version:	1.3.0
 %define	_version	1.3.0beta1
