@@ -12,7 +12,7 @@ License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	b5b8a1568b279ee81cca70a7882be654
-URL:		http://www.schlitt.info/
+URL:		http://pear.php.net/package/Net_FTP/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-ftp
 Requires:	php-pear
