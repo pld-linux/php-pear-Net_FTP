@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - Comfortable communication with FTP-servers
 Summary(pl):	%{_pearname} - Komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
-Version:	1.1
+Version:	1.2
 Release:	1
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	a35a9d197673b5e1c88633f9f312a047
+# Source0-md5:	b5b8a1568b279ee81cca70a7882be654
 URL:		http://www.schlitt.info/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-ftp
