@@ -24,14 +24,14 @@ This class allows you to communicate with FTP-servers more comfortable
 that the ftp-functions of PHP. Especially you can up- and download
 recursively.
 
-This class has in PEAR status: %{_status}
+This class has in PEAR status: %{_status}.
 
 %description -l pl
 Klasa ta pozwala na bardziej komfortowa komunikacjê z serwerami FTP
 ni¿ jest to realizowane przez funkcje w PHP. Szczególnie ³atwy jest
 down- i upload rekursywny.
 
-Ta klasa ma w PEAR status: %{_status}
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
