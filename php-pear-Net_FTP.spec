@@ -26,7 +26,7 @@ This class allows you to communicate with FTP-servers more comfortable
 that the ftp-functions of PHP. Especially you can up- and download
 recursively.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasa ta pozwala na bardziej komfortowa komunikacjê z serwerami FTP
