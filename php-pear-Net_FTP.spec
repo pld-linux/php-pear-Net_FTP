@@ -1,17 +1,17 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          Net
 %define         _subclass       FTP
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - Comfortable communication with FTP-servers
 Summary(pl):	%{_pearname} - Komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
-Version:	0.9
+Version:	1.0
 Release:	1
 License:	PHP 3.0
 Group:		Development/Languages/PHP
-# Source0-md5:	59afa47bf48fd088685e9cc53b3c2c37
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	4106a25c4ce4c180934b7964567b1728
 URL:		http://www.schlitt.info/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-ftp
