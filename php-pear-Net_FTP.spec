@@ -1,4 +1,5 @@
 %include	/usr/lib/rpm/macros.php
+%include	/usr/lib/rpm/macros.pear
 %define		_class		Net
 %define		_subclass	FTP
 %define		_status		stable
@@ -8,13 +9,13 @@ Summary:	%{_pearname} - comfortable communication with FTP-servers
 Summary(pl):	%{_pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
 Version:	1.3.1
-Release:	1
+Release:	1.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	b3703a33da0ee0e44128283bed6e93f6
 URL:		http://pear.php.net/package/Net_FTP/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	php-pear-build
 Requires:	php-ftp
 Requires:	php-pear
 BuildArch:	noarch
@@ -35,19 +36,20 @@ down- i upload rekursywny.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-
-install %{_pearname}-%{version}/%{_class}/%{_subclass}.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/example/*
+%doc install.log
+%doc docs/%{_pearname}/example
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
