@@ -14,7 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	b3703a33da0ee0e44128283bed6e93f6
 URL:		http://pear.php.net/package/Net_FTP/
-BuildRequires:	rpm-php-pearprov >= 4.4.2-10.2
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-ftp
 Requires:	php-pear
 BuildArch:	noarch
