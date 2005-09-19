@@ -1,5 +1,4 @@
 %include	/usr/lib/rpm/macros.php
-%include	/usr/lib/rpm/macros.pear
 %define		_class		Net
 %define		_subclass	FTP
 %define		_status		stable
@@ -15,7 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	b3703a33da0ee0e44128283bed6e93f6
 URL:		http://pear.php.net/package/Net_FTP/
-BuildRequires:	php-pear-build
+BuildRequires:	rpm-php-pearprov >= 4.4.2-10.2
 Requires:	php-ftp
 Requires:	php-pear
 BuildArch:	noarch
