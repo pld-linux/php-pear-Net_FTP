@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - comfortable communication with FTP-servers
 Summary(pl):	%{_pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
-Version:	1.3.1
-Release:	3
+Version:	1.3.2
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b3703a33da0ee0e44128283bed6e93f6
+# Source0-md5:	fce386d6029e1171ab8f46c7568f2637
 URL:		http://pear.php.net/package/Net_FTP/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-ftp
