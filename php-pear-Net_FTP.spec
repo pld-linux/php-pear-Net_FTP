@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - comfortable communication with FTP-servers
-Summary(pl):	%{_pearname} - komfortowa komunikacja z serwerami FTP
+Summary(pl.UTF-8):   %{_pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
 Version:	1.3.2
 Release:	2
@@ -28,9 +28,9 @@ recursively.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa ta pozwala na bardziej komfortowa komunikacjê z serwerami FTP
-ni¿ jest to realizowane przez funkcje w PHP. Szczególnie ³atwy jest
+%description -l pl.UTF-8
+Klasa ta pozwala na bardziej komfortowa komunikacjÄ™ z serwerami FTP
+niÅ¼ jest to realizowane przez funkcje w PHP. SzczegÃ³lnie Å‚atwy jest
 down- i upload rekursywny.
 
 Ta klasa ma w PEAR status: %{_status}.
