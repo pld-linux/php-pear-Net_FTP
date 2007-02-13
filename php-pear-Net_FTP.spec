@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - comfortable communication with FTP-servers
-Summary(pl.UTF-8):   %{_pearname} - komfortowa komunikacja z serwerami FTP
+Summary(pl.UTF-8):	%{_pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
 Version:	1.3.2
 Release:	2
