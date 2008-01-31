@@ -7,7 +7,7 @@ Summary:	%{_pearname} - comfortable communication with FTP-servers
 Summary(pl.UTF-8):	%{_pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
 Version:	1.3.3
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
