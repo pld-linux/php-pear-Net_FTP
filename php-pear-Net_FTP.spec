@@ -52,6 +52,8 @@ Testy dla PEAR::%{_pearname}.
 %prep
 %pear_package_setup
 
+mv ./%{php_pear_dir}/data/Net_FTP/CHANGELOG .
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
@@ -62,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc install.log
+%doc install.log CHANGELOG
 %doc docs/%{_pearname}/example
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
