@@ -4,7 +4,7 @@
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 %define		subver	a2
-%define		rel		1
+%define		rel		2
 Summary:	%{_pearname} - comfortable communication with FTP-servers
 Summary(pl.UTF-8):	%{_pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
@@ -18,7 +18,7 @@ URL:		http://pear.php.net/package/Net_FTP/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(ftp)
+Requires:	php-ftp
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,9 +41,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
