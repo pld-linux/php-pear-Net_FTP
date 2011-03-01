@@ -4,7 +4,7 @@
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 %define		subver	a2
-%define		rel		2
+%define		rel		3
 Summary:	%{_pearname} - comfortable communication with FTP-servers
 Summary(pl.UTF-8):	%{_pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{_pearname}
