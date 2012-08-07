@@ -1,7 +1,7 @@
 %define		status		alpha
 %define		pearname	Net_FTP
 %define		subver	a3
-%define		rel		1
+%define		rel		2
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - comfortable communication with FTP-servers
 Summary(pl.UTF-8):	%{pearname} - komfortowa komunikacja z serwerami FTP
@@ -16,7 +16,7 @@ URL:		http://pear.php.net/package/Net_FTP/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
-Requires:	php-ftp
+Requires:	php(ftp)
 Requires:	php-pear
 Obsoletes:	php-pear-Net_FTP-tests
 BuildArch:	noarch
