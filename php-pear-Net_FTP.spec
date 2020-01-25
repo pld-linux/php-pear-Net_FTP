@@ -2,7 +2,6 @@
 %define		pearname	Net_FTP
 %define		subver	a3
 %define		rel		2
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - comfortable communication with FTP-servers
 Summary(pl.UTF-8):	%{pearname} - komfortowa komunikacja z serwerami FTP
 Name:		php-pear-%{pearname}
